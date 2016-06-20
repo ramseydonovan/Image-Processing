@@ -16,11 +16,10 @@ for t = 1 : N
     IgCopy = Ig;
     for x = (1+layers)  : m-layers
         for y = (1+layers)  : n-layers
-           %A = zeros(layers, layers); 
            A = IgCopy(x-layers:x+layers, y-layers:y+layers); 
            B = A(:)';
            sortedArray = sort(B);
-         Ig(x,y) = sortedArray((((layers + 2)^2 / 2) + .5)); % retrieves the median value 
+         Ig(x,y) = sortedArray((((layers + layers + 1)^2 / 2) + .5)); % retrieves the median value 
         end 
     end
     imagesc(Ig); colormap(gray);title(sprintf('time = %d', t)); pause(1e-4);
