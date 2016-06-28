@@ -24,6 +24,6 @@ for t = 1 : N
     end
     imagesc(Ig); colormap(gray);title(sprintf('time = %d', t)); pause(1e-4);
 end
-Ig = Ig(2:m-layers, 2:n-layers); %undo padding 
+Ig = Ig(layers+1:m-layers, layers+1:n-layers); %undo padding 
 end
 
