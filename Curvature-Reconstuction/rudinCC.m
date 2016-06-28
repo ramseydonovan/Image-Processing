@@ -1,5 +1,5 @@
 function [ I ] = rudinCC(a, I, dt, N)
-%Algorithm described in “Nonlinear Total Variation Based Noise Removal Algorithms” 
+%Algorithm described in â€œNonlinear Total Variation Based Noise Removal Algorithmsâ€ 
 % by Leonid Rudin, Stanley Osher, and Emad Fatemi (1992) for colored images
 %This matlab code was written by Donovan Ramsey, Duquesne University
 
