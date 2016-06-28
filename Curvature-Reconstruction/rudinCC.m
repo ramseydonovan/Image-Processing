@@ -8,7 +8,7 @@ function [ I ] = rudinCC(a, I, dt, N)
 
 %This function requires my function "calcCurve.m" 
 
-% Sample input: rudinCC(a, I, .005, 500); with lambda = .5
+%Sample input: rudinCC(a, I, .005, 500); with lambda = .5
 
 [m,n] = size(I(:,:,1));
 m = m+2; 
